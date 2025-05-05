@@ -30,8 +30,8 @@ search_button.click()
 wait.until(EC.presence_of_element_located((By.PARTIAL_LINK_TEXT, "Car Seat Back Cushion")))
 
 # scroll down to see the result of the product
-driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")  # เลื่อนลงไปด้านล่างสุด
-time.sleep(1)  # รอให้หน้าเว็บโหลด
+driver.execute_script("window.scrollTo(0, document.body.scrollHeight);") 
+time.sleep(1)
 
 # click at the product
 product_link = driver.find_element(By.PARTIAL_LINK_TEXT, "Car Seat Back Cushion")
